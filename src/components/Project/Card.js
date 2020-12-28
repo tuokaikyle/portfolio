@@ -1,0 +1,32 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+
+const Card = ({ project }) => {
+  return (
+    <div className='py-10 w-11/12 mx-auto border-b'>
+      <div>
+        <a href={project.link} target='_blank' className='flex'>
+          <div className='text-2xl mr-2'>{project.title}</div>
+          <FontAwesomeIcon icon={faLink} className='text-gray-400 mt-2' />
+        </a>
+        <div className='pt-3 pb-7'>{project.subtitle}</div>
+      </div>
+      <div className='flex border'>
+        {project.image.map((i, key) => (
+          <img key={key} src={`images/projects/${i}`}></img>
+        ))}
+      </div>
+
+      <ul className='list-disc list-inside w-4/5 mx-auto mt-10'>
+        {project.description.map((i, key) => (
+          <li key={key} className='pb-4'>
+            {i}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Card;
