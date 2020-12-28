@@ -6,7 +6,8 @@ const Courses = ({ courses }) => {
       {courses.map((i, key) => (
         <div key={key}>
           <div className='flex'>
-            <div className='gray-text'>{i.number}</div> - {i.title}
+            <div className='hidden md:block gray-text'>{i.number}</div> -{' '}
+            {i.title}
           </div>
         </div>
       ))}
