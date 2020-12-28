@@ -250,11 +250,11 @@ export const resume = {
 export const project = [
   {
     title: 'Instagram-Clone',
-    subtitle: 'A re-creation of Instagram',
+    subtitle: 'Trying to implement a mini Instagram',
     link: 'https://instagram-clone-1112.herokuapp.com/',
     image: ['insta.jpg'],
     description: [
-      'This is a starter project that creates many of the basic functionalities that Instagram has, including user sign up/login/logout, add/delete/search/update posts or personal information, like/dislike posts, commenting, follow/unfollow and others.',
+      'This is a starter project that creates many of the basic functionalities that Instagram has, including user [signup, login, logout], [add, delete, search, update] posts or personal information, [like, dislike] posts, [follow, unfollow] other users, comment on posts and others.',
       'It uses the MERN stack, namely MongoDb, Express, React and Nodejs. It also uses Materializecss to outline the user-interface, Cloudinary to store the uploaded image and Sendgrid to manage the emails for password-resetting.',
     ],
   },
@@ -264,9 +264,8 @@ export const project = [
     link: 'https://onlineshop-mern.herokuapp.com/',
     image: ['shop.jpg'],
     description: [
-      'The functionalities include user sign up/login/logout, see/search/purchase products, add/update personal information. The owner of the website can also add/update or delete product.',
+      'The functionalities include user [signup, login, logout], [see, search, purchase] products, [add, update] personal information. The owner of the website can also [add, update or delete] product.',
       'This project uses the MERN stack, namely MongoDb, Express, React and Nodejs. React Bootstrap is used for user interface.',
-      'This project is built along with an online course by Brad Traversy.',
     ],
   },
   {
