@@ -14,7 +14,7 @@ const Card = ({ project }) => {
       </div>
       <div className='flex border'>
         {project.image.map((i, key) => (
-          <img className='h-auto' key={key} src={`images/projects/${i}`}></img>
+          <img className='w-full' key={key} src={`images/projects/${i}`}></img>
         ))}
       </div>
 
