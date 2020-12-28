@@ -12,9 +12,13 @@ const Card = ({ project }) => {
         </a>
         <div className='pt-3 pb-7'>{project.subtitle}</div>
       </div>
-      <div className='flex border'>
+      <div className='grid grid-cols-1 border'>
         {project.image.map((i, key) => (
-          <img className='w-full' key={key} src={`images/projects/${i}`}></img>
+          <img
+            className='col-span-1'
+            key={key}
+            src={`images/projects/${i}`}
+          ></img>
         ))}
       </div>
 
