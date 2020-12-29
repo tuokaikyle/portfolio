@@ -43,9 +43,8 @@ const Skills = ({ skills }) => {
                     className='shadow bg-gray-200 my-2 rounded-full'
                     key={key}
                   >
-                    {console.log(typeof i.competency)}
                     <div
-                      className={`w-${i.competency.toString()}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
+                      className={`w-${i.competency}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
                     >
                       {i.title}
                     </div>
