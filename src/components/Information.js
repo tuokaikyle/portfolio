@@ -7,7 +7,7 @@ const Information = () => {
   return (
     <div className=''>
       <img
-        className='w-48 rounded-full mx-auto xl:ml-0'
+        className='w-40 2xl:w-48 rounded-full mx-auto xl:ml-0'
         src={`/images/${information.image}`}
       ></img>
       <div className='font-bold title pt-10'>{information.name}</div>

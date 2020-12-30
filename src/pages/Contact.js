@@ -40,7 +40,7 @@ const Contact = () => {
           <input
             type='text'
             className='mt-2 mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
-            placeholder='I will reply your message through this contact information'
+            placeholder='Your email or phone'
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);

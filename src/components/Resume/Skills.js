@@ -4,13 +4,19 @@ import {
   faAngleDoubleDown,
   faAngleDoubleUp,
 } from '@fortawesome/free-solid-svg-icons';
+import { useTransition, animated } from 'react-spring';
 
-const Skills = ({ skills }) => {
+const Demo = ({ skills }) => {
   const c = skills.map((i) => [...i.category]).flat(1);
-  // .reduce((acc, j) => acc.concat(j));
   const categories = ['All'].concat([...new Set(c)]);
   const [active, setActive] = useState('All');
   const [show, setShow] = useState(false);
+
+  const skillsAll = skills.sort(
+    (b, a) => parseFloat(a.competency) - parseFloat(b.competency)
+  );
+  const skillsTop = skillsAll.slice(0, 5);
+  // const skillsBottom = skillsAll.slice(5);
 
   return (
     <div>
@@ -30,15 +36,12 @@ const Skills = ({ skills }) => {
           </button>
         ))}
       </div>
-      <div className='w-4/5 ml-2'>
+      <div className='ml-2 mr-8'>
         {active === 'All' ? (
           <div>
-            <div className={`overflow-hidden ${!show && 'h-48'}`}>
-              {skills
-                .sort(
-                  (b, a) => parseFloat(a.competency) - parseFloat(b.competency)
-                )
-                .map((i, key) => (
+            {show ? (
+              <div>
+                {skillsAll.map((i, key) => (
                   <div
                     className='shadow bg-gray-200 my-2 rounded-full'
                     key={key}
@@ -50,7 +53,23 @@ const Skills = ({ skills }) => {
                     </div>
                   </div>
                 ))}
-            </div>
+              </div>
+            ) : (
+              <div>
+                {skillsTop.map((i, key) => (
+                  <div
+                    className='shadow bg-gray-200 my-2 rounded-full'
+                    key={key}
+                  >
+                    <div
+                      className={`w-${i.competency}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
+                    >
+                      {i.title}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
             <div
               className='my-2 flex justify-center shadow bg-gray-200 rounded-full'
               onClick={() => {
@@ -60,12 +79,12 @@ const Skills = ({ skills }) => {
               {show ? (
                 <FontAwesomeIcon
                   icon={faAngleDoubleUp}
-                  className='my-1 text-blue-400 mx-auto text-xl'
+                  className='my-1 text-blue-400 mx-auto text-s'
                 />
               ) : (
                 <FontAwesomeIcon
                   icon={faAngleDoubleDown}
-                  className='my-1 text-blue-400 mx-auto text-xl'
+                  className='my-1 text-blue-400 mx-auto text-s'
                 />
               )}
             </div>
@@ -89,4 +108,4 @@ const Skills = ({ skills }) => {
   );
 };
 
-export default Skills;
+export default Demo;

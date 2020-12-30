@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className='App relative pb-5 min-h-screen bg-gray-100 font-body'>
         <Header />
-        <div className='xl:flex w-11/12 2xl:w-4/5 mx-auto my-10 md:my-20 '>
+        <div className='xl:flex w-11/12 2xl:w-4/5 mx-auto my-10 2xl:my-20 '>
           <div className='w-11/12 xl:w-3/4 bg-content lg:order-2 border mx-auto mb-10'>
             <Switch>
               <Route exact path='/' component={Front} />
@@ -24,7 +24,7 @@ function App() {
               <Route path='/project' component={Projects} />
               <Route path='/contact' component={Contact} />
               <Route path='/resume' component={Resume} />
-              {/* <Route path='/demo' component={Demo} /> */}
+              <Route path='/demo' component={Demo} />
             </Switch>
           </div>
           <div className='w-3/4 xl:w-1/4 text-center xl:text-left lg:order-1 mx-auto xl:pr-12'>

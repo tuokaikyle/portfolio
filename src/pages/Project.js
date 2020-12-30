@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div>
       <PageTitile
-        title={'Projects'}
+        title={'Project'}
         subtitle={'A SELECTION OF PROJECTS'}
       ></PageTitile>
       <div className='px-10 py-12'>

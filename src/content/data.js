@@ -146,12 +146,12 @@ export const resume = {
     },
     {
       title: 'Vue',
-      competency: 4,
+      competency: 3,
       category: ['Web Development'],
     },
     {
       title: 'Amazon Web Services',
-      competency: 5,
+      competency: 3,
       category: ['Tools'],
     },
     {
@@ -161,27 +161,27 @@ export const resume = {
     },
     {
       title: 'SQL',
-      competency: 4,
+      competency: 3,
       category: ['Databases', 'Languages'],
     },
     {
       title: 'Azure',
-      competency: 3,
+      competency: 1,
       category: ['Tools'],
     },
     {
       title: 'Flask',
-      competency: 4,
+      competency: 2,
       category: ['Web Development'],
     },
     {
       title: 'Git/Github',
-      competency: 3,
+      competency: 2,
       category: ['Tools'],
     },
     {
       title: 'Google Cloud Platform',
-      competency: 2,
+      competency: 1,
       category: ['Tools'],
     },
     {
@@ -191,7 +191,7 @@ export const resume = {
     },
     {
       title: 'Tensorflow/Keras',
-      competency: 2,
+      competency: 1,
       category: ['Machine Learning', 'Data Science'],
     },
     {
@@ -201,7 +201,7 @@ export const resume = {
     },
     {
       title: 'Typescript',
-      competency: 2,
+      competency: 1,
       category: ['Web Development', 'Languages'],
     },
     {
@@ -226,12 +226,12 @@ export const resume = {
     },
     {
       title: 'GraphQL',
-      competency: 2,
+      competency: 1,
       category: ['Web Development', 'Databases'],
     },
     {
       title: 'Pandas',
-      competency: 3,
+      competency: 2,
       category: ['Machine Learning', 'Data Science'],
     },
     {
@@ -246,7 +246,7 @@ export const resume = {
     },
     {
       title: 'Firebase',
-      competency: 2,
+      competency: 1,
       category: ['Tools', 'Web Development'],
     },
   ],
@@ -269,7 +269,7 @@ export const project = [
     link: 'https://onlineshop-mern.herokuapp.com/',
     image: ['shop.jpg'],
     description: [
-      'The functionalities include user [signup, login, logout], [see, search, purchase] products, [add, update] personal information. The owner of the website can also [add, update or delete] product.',
+      'The functionalities include user [signup, login, logout], [see, search, purchase] products, [add, update] personal information. The owner of the website can also [add, update, delete] product.',
       'This project uses the MERN stack, namely MongoDb, Express, React and Nodejs. React Bootstrap is used for user interface.',
     ],
   },
@@ -280,8 +280,8 @@ export const project = [
     image: ['tomato.jpg'],
     description: [
       "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management.",
-      'I use the MERN stack [MongoDB, Express, React and Nodejs] to build this app. Materializecss is used for the User Interface part.',
-      'Still improving -- as you may have noticed, this app still has some bugs. I hope to improve this app by adding more features including fully responsive, drag and drop items, signup/login and more.',
+      'I use the MERN stack, MongoDB, Express, React and Nodejs to build this app. Materializecss is used for the User Interface part.',
+      'Still in developing -- as you may have noticed, this app still has some bugs. I hope to improve this app by adding more features including fully responsive, drag and drop items, signup/login and more.',
     ],
   },
 ];

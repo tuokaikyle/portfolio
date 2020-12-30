@@ -58,7 +58,7 @@ const Header = () => {
                     />
                   </div>
                   <div className='lg:hidden divide-y'>
-                    {menu('gray-text py-3')}
+                    {menu('gray-text py-3 hover:text-blue-500')}
                   </div>
                 </animated.div>
               )
@@ -74,7 +74,7 @@ const Header = () => {
       </div>
       {/* nav bar - 小屏幕或者以上的时候横排展示 */}
       <div className='hidden lg:flex lg:divide-x lg:divide-color'>
-        {menu('place-self-center px-5 gray-text')}
+        {menu('place-self-center px-5 gray-text hover:text-blue-500')}
       </div>
     </div>
   );
