@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import PageTitile from '../components/PageTitile';
+import { projectFirestore } from '../firebase/config';
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [send, setSend] = useState({});
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    if (name && email && message) {
+      setSend({ name, email, message });
+      projectFirestore.collection('contact').add(send);
+      // need a loader and succeed message
+    }
   };
   return (
     <div>

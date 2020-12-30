@@ -244,6 +244,11 @@ export const resume = {
       competency: 1,
       category: ['Machine Learning', 'Data Science'],
     },
+    {
+      title: 'Firebase',
+      competency: 2,
+      category: ['Tools', 'Web Development'],
+    },
   ],
 };
 
