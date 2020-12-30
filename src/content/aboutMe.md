@@ -4,9 +4,10 @@
 - I [didn't] start coding when I was 7.
 - My Bachelors was in English Literature, and I went into financing after graduated from college in 2015.
 - I left the bank in 2017 and joined a startup company that creates analytics apps for Instagram and facebook.
-- My role in the startup company was marketing specialist. But sometimes I do some freelancing in front-end development as well.
+- My role in the startup company was marketing specialist.
 - It was during that time that I started to learn coding by myself and wanted to change my career by having a master's degree.
-- I came to Australia and started doing the Master of Information Technology at UQ in 2018. I completed it in 2020.
+- I came to Australia and started doing the Master of Information Technology at UQ in 2018. During this period of time I did some freelancing in front-end development while studying.
+- I completed my degree in 2020.
 
 ### I LIKE
 
