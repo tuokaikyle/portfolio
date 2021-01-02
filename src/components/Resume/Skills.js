@@ -37,9 +37,10 @@ const Demo = ({ skills }) => {
           ? skills.map((i, key) => (
               <div
                 key={key}
-                className={`bg-blue-${
-                  i.competency * 100 + 300
-                } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                // className={`bg-blue-${
+                //   i.competency * 100 + 300
+                // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
               >
                 {i.title + ' - ' + i.competency}
               </div>
@@ -49,9 +50,10 @@ const Demo = ({ skills }) => {
               .map((i, key) => (
                 <div
                   key={key}
-                  className={`bg-blue-${
-                    i.competency * 100 + 300
-                  } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                  className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                  // className={`bg-blue-${
+                  //   i.competency * 100 + 300
+                  // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
                 >
                   {i.title + ' - ' + i.competency}
                 </div>
