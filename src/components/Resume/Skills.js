@@ -12,11 +12,7 @@ const Demo = ({ skills }) => {
   const [active, setActive] = useState('All');
   const [show, setShow] = useState(false);
 
-  const skillsAll = skills.sort(
-    (b, a) => parseFloat(a.competency) - parseFloat(b.competency)
-  );
-  const skillsTop = skillsAll.slice(0, 5);
-  // const skillsBottom = skillsAll.slice(5);
+  skills.sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency));
 
   return (
     <div>
@@ -36,7 +32,32 @@ const Demo = ({ skills }) => {
           </button>
         ))}
       </div>
-      <div className='ml-2 mr-8'>
+      <div className='ml-2 mr-8 flex flex-wrap'>
+        {active === 'All'
+          ? skills.map((i, key) => (
+              <div
+                key={key}
+                className={`bg-blue-${
+                  i.competency * 100 + 300
+                } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+              >
+                {i.title + ' - ' + i.competency}
+              </div>
+            ))
+          : skills
+              .filter((j) => j.category.includes(active))
+              .map((i, key) => (
+                <div
+                  key={key}
+                  className={`bg-blue-${
+                    i.competency * 100 + 300
+                  } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                >
+                  {i.title + ' - ' + i.competency}
+                </div>
+              ))}
+      </div>
+      {/* <div className='ml-2 mr-8'>
         {active === 'All' ? (
           <div>
             {show ? (
@@ -103,7 +124,7 @@ const Demo = ({ skills }) => {
               </div>
             ))
         )}
-      </div>
+      </div>*/}
     </div>
   );
 };
