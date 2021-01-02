@@ -6,15 +6,31 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [send, setSend] = useState({});
+  const [result, setResult] = useState('');
 
   const submitHandler = async (e) => {
     e.preventDefault();
     if (name && email && message) {
-      setSend({ name, email, message });
-      projectFirestore.collection('contact').add(send);
+      const dtime = new Date().toLocaleString('en-CA', {
+        timeZone: 'Australia/Brisbane',
+        hour12: false,
+      });
+      const send = { name, email, message, dtime };
+      console.log(send);
+      await projectFirestore
+        .collection('contact')
+        .add(send)
+        .then((back) => {
+          setResult(back.id);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
       // need a loader and succeed message
     }
+    setName('');
+    setEmail('');
+    setMessage('');
   };
   return (
     <div>
@@ -59,7 +75,7 @@ const Contact = () => {
             }}
           ></textarea>
         </div>
-        <div className='mt-10'>
+        <div className='mt-10 flex'>
           <button
             onClick={(e) => {
               submitHandler(e);
@@ -72,6 +88,7 @@ const Contact = () => {
           >
             Send
           </button>
+          {result && <div className='ml-10'>Message Sent</div>}
         </div>
       </form>
     </div>

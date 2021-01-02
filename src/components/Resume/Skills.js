@@ -42,7 +42,7 @@ const Demo = ({ skills }) => {
                 //   i.competency * 100 + 300
                 // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
               >
-                {i.title + ' - ' + i.competency}
+                {i.title}
               </div>
             ))
           : skills
@@ -55,7 +55,7 @@ const Demo = ({ skills }) => {
                   //   i.competency * 100 + 300
                   // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
                 >
-                  {i.title + ' - ' + i.competency}
+                  {i.title}
                 </div>
               ))}
       </div>
