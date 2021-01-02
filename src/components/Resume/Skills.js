@@ -13,7 +13,11 @@ const Demo = ({ skills }) => {
   const [show, setShow] = useState(false);
 
   skills.sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency));
-
+  const skillsCSS = skills.map((i) => ({
+    ...i,
+    css: 'bg-blue-' + (i.competency * 100 + 300),
+  }));
+  console.log(skillsCSS);
   return (
     <div>
       <div className='flex flex-wrap' role='group'>
@@ -34,26 +38,22 @@ const Demo = ({ skills }) => {
       </div>
       <div className='ml-2 mr-8 flex flex-wrap'>
         {active === 'All'
-          ? skills.map((i, key) => (
+          ? skillsCSS.map((i, key) => (
               <div
                 key={key}
-                className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                // className={`bg-blue-${
-                //   i.competency * 100 + 300
-                // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                // className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
               >
                 {i.title}
               </div>
             ))
-          : skills
+          : skillsCSS
               .filter((j) => j.category.includes(active))
               .map((i, key) => (
                 <div
                   key={key}
-                  className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                  // className={`bg-blue-${
-                  //   i.competency * 100 + 300
-                  // } m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                  // className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                  className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
                 >
                   {i.title}
                 </div>

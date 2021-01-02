@@ -88,7 +88,7 @@ const Contact = () => {
           >
             Send
           </button>
-          {result && <div className='ml-10'>Message Sent</div>}
+          {result && <div className='ml-10 py-1'>Message Sent</div>}
         </div>
       </form>
     </div>
