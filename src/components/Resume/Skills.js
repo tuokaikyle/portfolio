@@ -38,22 +38,22 @@ const Demo = ({ skills }) => {
       </div>
       <div className='ml-2 mr-8 flex flex-wrap'>
         {active === 'All'
-          ? skillsCSS.map((i, key) => (
+          ? skills.map((i, key) => (
               <div
                 key={key}
-                // className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                // className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
               >
                 {i.title}
               </div>
             ))
-          : skillsCSS
+          : skills
               .filter((j) => j.category.includes(active))
               .map((i, key) => (
                 <div
                   key={key}
-                  // className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                  className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
+                  className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
+                  // className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
                 >
                   {i.title}
                 </div>
