@@ -1,23 +1,12 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faAngleDoubleDown,
-  faAngleDoubleUp,
-} from '@fortawesome/free-solid-svg-icons';
-import { useTransition, animated } from 'react-spring';
 
 const Demo = ({ skills }) => {
   const c = skills.map((i) => [...i.category]).flat(1);
   const categories = ['All'].concat([...new Set(c)]);
   const [active, setActive] = useState('All');
-  const [show, setShow] = useState(false);
 
   skills.sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency));
-  const skillsCSS = skills.map((i) => ({
-    ...i,
-    css: 'bg-blue-' + (i.competency * 100 + 300),
-  }));
-  console.log(skillsCSS);
+
   return (
     <div>
       <div className='flex flex-wrap' role='group'>
@@ -40,97 +29,53 @@ const Demo = ({ skills }) => {
         {active === 'All'
           ? skills.map((i, key) =>
               i.competency === 5 ? (
-                <div className='c5'>{i.title}</div>
+                <div key={key} className='c5'>
+                  {i.title}
+                </div>
               ) : i.competency === 4 ? (
-                <div className='c4'>{i.title}</div>
+                <div key={key} className='c4'>
+                  {i.title}
+                </div>
               ) : i.competency === 3 ? (
-                <div className='c3'>{i.title}</div>
+                <div key={key} className='c3'>
+                  {i.title}
+                </div>
               ) : i.competency === 2 ? (
-                <div className='c2'>{i.title}</div>
+                <div key={key} className='c2'>
+                  {i.title}
+                </div>
               ) : (
-                <div className='c1'>{i.title}</div>
+                <div key={key} className='c1'>
+                  {i.title}
+                </div>
               )
             )
           : skills
               .filter((j) => j.category.includes(active))
-              .map((i, key) => (
-                <div
-                  key={key}
-                  className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                  // className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
-                >
-                  {i.title}
-                </div>
-              ))}
-      </div>
-      {/* <div className='ml-2 mr-8'>
-        {active === 'All' ? (
-          <div>
-            {show ? (
-              <div>
-                {skillsAll.map((i, key) => (
-                  <div
-                    className='shadow bg-gray-200 my-2 rounded-full'
-                    key={key}
-                  >
-                    <div
-                      className={`w-${i.competency}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
-                    >
-                      {i.title}
-                    </div>
+              .map((i, key) =>
+                i.competency === 5 ? (
+                  <div key={key} className='c5'>
+                    {i.title}
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div>
-                {skillsTop.map((i, key) => (
-                  <div
-                    className='shadow bg-gray-200 my-2 rounded-full'
-                    key={key}
-                  >
-                    <div
-                      className={`w-${i.competency}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
-                    >
-                      {i.title}
-                    </div>
+                ) : i.competency === 4 ? (
+                  <div key={key} className='c4'>
+                    {i.title}
                   </div>
-                ))}
-              </div>
-            )}
-            <div
-              className='my-2 flex justify-center shadow bg-gray-200 rounded-full'
-              onClick={() => {
-                setShow(!show);
-              }}
-            >
-              {show ? (
-                <FontAwesomeIcon
-                  icon={faAngleDoubleUp}
-                  className='my-1 text-blue-400 mx-auto text-s'
-                />
-              ) : (
-                <FontAwesomeIcon
-                  icon={faAngleDoubleDown}
-                  className='my-1 text-blue-400 mx-auto text-s'
-                />
+                ) : i.competency === 3 ? (
+                  <div key={key} className='c3'>
+                    {i.title}
+                  </div>
+                ) : i.competency === 2 ? (
+                  <div key={key} className='c2'>
+                    {i.title}
+                  </div>
+                ) : (
+                  <div key={key} className='c1'>
+                    {i.title}
+                  </div>
+                )
               )}
-            </div>
-          </div>
-        ) : (
-          skills
-            .sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency))
-            .filter((j) => j.category.includes(active))
-            .map((i, key) => (
-              <div className='shadow bg-gray-200 my-2 rounded-full' key={key}>
-                <div
-                  className={`w-${i.competency}/5 bg-blue-600 text-xs px-2 py-1 text-left text-white rounded-full`}
-                >
-                  {i.title}
-                </div>
-              </div>
-            ))
-        )}
-      </div>*/}
+      </div>
     </div>
   );
 };

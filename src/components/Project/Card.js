@@ -6,7 +6,12 @@ const Card = ({ project }) => {
   return (
     <div className='py-10 w-11/12 mx-auto border-b'>
       <div>
-        <a href={project.link} target='_blank' className='flex'>
+        <a
+          href={project.link}
+          target='_blank'
+          rel='noreferrer'
+          className='flex'
+        >
           <div className='text-2xl mr-2'>{project.title}</div>
           <FontAwesomeIcon icon={faLink} className='text-gray-400 mt-2' />
         </a>
@@ -18,6 +23,7 @@ const Card = ({ project }) => {
             className='col-span-1'
             key={key}
             src={`images/projects/${i}`}
+            alt='project display'
           ></img>
         ))}
       </div>
