@@ -38,15 +38,19 @@ const Demo = ({ skills }) => {
       </div>
       <div className='ml-2 mr-8 flex flex-wrap'>
         {active === 'All'
-          ? skills.map((i, key) => (
-              <div
-                key={key}
-                className='bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full'
-                // className={`${i.css} m-2 text-xs px-2 py-1 text-left text-white rounded-full`}
-              >
-                {i.title}
-              </div>
-            ))
+          ? skills.map((i, key) =>
+              i.competency === 5 ? (
+                <div className='c5'>{i.title}</div>
+              ) : i.competency === 4 ? (
+                <div className='c4'>{i.title}</div>
+              ) : i.competency === 3 ? (
+                <div className='c3'>{i.title}</div>
+              ) : i.competency === 2 ? (
+                <div className='c2'>{i.title}</div>
+              ) : (
+                <div className='c1'>{i.title}</div>
+              )
+            )
           : skills
               .filter((j) => j.category.includes(active))
               .map((i, key) => (

@@ -30,6 +30,22 @@ body {
   @apply text-gray-400;
 }
 
+.c1 {
+  @apply bg-blue-400 m-2 text-xs px-2 py-1 text-left text-white rounded-full;
+}
+.c2 {
+  @apply bg-blue-500 m-2 text-xs px-2 py-1 text-left text-white rounded-full;
+}
+.c3 {
+  @apply bg-blue-600 m-2 text-xs px-2 py-1 text-left text-white rounded-full;
+}
+.c4 {
+  @apply bg-blue-700 m-2 text-xs px-2 py-1 text-left text-white rounded-full;
+}
+.c5 {
+  @apply bg-blue-800 m-2 text-xs px-2 py-1 text-left text-white rounded-full;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
