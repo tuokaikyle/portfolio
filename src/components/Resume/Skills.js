@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Demo = ({ skills }) => {
+const Skills = ({ skills }) => {
   const c = skills.map((i) => [...i.category]).flat(1);
   const categories = ['All'].concat([...new Set(c)]);
   const [active, setActive] = useState('All');
@@ -80,4 +80,4 @@ const Demo = ({ skills }) => {
   );
 };
 
-export default Demo;
+export default Skills;
