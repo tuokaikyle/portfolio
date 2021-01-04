@@ -6,7 +6,7 @@ const Education = ({ degrees }) => {
       {degrees.map((i, key) => (
         <div key={key}>
           <div>{i.degree}</div>
-          <div className='text-sm gray-text'>
+          <div className='text-sm gray-text mb-3'>
             {i.school}, {i.year}
           </div>
         </div>

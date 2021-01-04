@@ -20,9 +20,9 @@ const Information = () => {
       ))}
 
       <div className='py-10'>
-        <p className='copyright text-gray-400'>
+        {/* <p className='copyright text-gray-400'>
           &copy; {information.copyRight}
-        </p>
+        </p> */}
         <div className='justify-center xl:justify-start flex mt-4'>
           <a href={information.instagram.link} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon

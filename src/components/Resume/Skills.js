@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
   skills.sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency));
 
   return (
-    <div>
+    <div className='mb-3'>
       <div className='flex flex-wrap' role='group'>
         {categories.map((i, key) => (
           <button

@@ -8,7 +8,7 @@ import { useTransition, animated } from 'react-spring';
 const Header = () => {
   const name = information.name;
 
-  const items = ['About', 'Resume', 'Project', 'Contact'];
+  const items = ['Resume', 'Project', 'Contact'];
 
   function menu(twcss) {
     return items.map((i, key) => (

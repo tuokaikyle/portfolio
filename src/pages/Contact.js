@@ -52,7 +52,7 @@ const Contact = () => {
           />
         </div>
         <div className='md:flex'>
-          <span className='text-gray-700 w-1/6 pt-1'>Email</span>
+          <span className='text-gray-700 w-1/6 pt-1'>Contact</span>
           <input
             type='text'
             className='mt-2 mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
