@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Information = () => {
+  const { PUBLIC_URL } = process.env;
   return (
     <div className=''>
       <img
         className='w-40 2xl:w-48 rounded-full mx-auto xl:ml-0'
-        src={`/images/${information.image}`}
+        src={`${process.env.PUBLIC_URL}/images/${information.image}`}
         alt='profile'
       ></img>
       <div className='font-bold title pt-10'>{information.name}</div>

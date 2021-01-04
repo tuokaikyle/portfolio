@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ project }) => {
+  const { PUBLIC_URL } = process.env;
   return (
     <div className='py-10 w-11/12 mx-auto border-b'>
       <div>
@@ -22,7 +23,7 @@ const Card = ({ project }) => {
           <img
             className='col-span-1'
             key={key}
-            src={`images/projects/${i}`}
+            src={`${process.env.PUBLIC_URL}/images/projects/${i}`}
             alt='project display'
           ></img>
         ))}

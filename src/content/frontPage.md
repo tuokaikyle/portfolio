@@ -1,8 +1,8 @@
 Hi, I'm Kai. I am a software engineer, a web developer and an AWS certified solutions architect associate with some customer service work experience in a bank.
 
-Please feel free to checkout my CV[] & projects[], or leave me a message. Cheers!
+Please feel free to checkout my [CV]() & [projects](), or leave me a message. Cheers!
 
-### SOME RANDOM FACTS
+#### SOME RANDOM FACTS
 
 - I can locate _almost_ every country on a world map.
 - I write Chinese calligraphy pretty well.
