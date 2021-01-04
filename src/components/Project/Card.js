@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ project }) => {
-  const { PUBLIC_URL } = process.env;
   return (
     <div className='py-10 w-11/12 mx-auto border-b'>
       <div>
@@ -20,12 +19,14 @@ const Card = ({ project }) => {
       </div>
       <div className='grid grid-cols-1 border'>
         {project.image.map((i, key) => (
-          <img
-            className='col-span-1'
-            key={key}
-            src={`${process.env.PUBLIC_URL}/images/projects/${i}`}
-            alt='project display'
-          ></img>
+          <a href={project.link} target='_blank' rel='noreferrer'>
+            <img
+              className='col-span-1'
+              key={key}
+              src={`${process.env.PUBLIC_URL}/images/projects/${i}`}
+              alt='project display'
+            ></img>
+          </a>
         ))}
       </div>
 

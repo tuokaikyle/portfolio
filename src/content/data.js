@@ -18,7 +18,7 @@ export const information = {
 
 export const front = {
   title: 'Welcome',
-  subtitle: 'A portfolio website built using React and Tailwind',
+  subtitle: 'A personal website built using React and Tailwindcss',
 };
 
 export const resume = {

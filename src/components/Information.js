@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Information = () => {
-  const { PUBLIC_URL } = process.env;
   return (
     <div className=''>
       <img
