@@ -12,5 +12,5 @@ Please feel free to checkout my CV & projects, or send me message. Cheers!
 - I enjoy soccer, swimming, ice-skating, karting, table tennis, reading and cooking.
 - One thing I hope I could have bought earlier is the printer.
 - One thing I particularly remember and felt exciting was the first time I saw the landing and taking-off of a airplane.
-- When I was a kid one of my neighbors was a very intelligent businessman. 20 years later I saw him on TV he became nationally well known for making a big lawsuit.
-- My primary school and the building that I had most courses in college was named after the same person: [Shao Yifu](https://en.wikipedia.org/wiki/Run_Run_Shaw). He was a Hong Kong entertainment mogul and have donated more than 4 billion HK dollars to education.
+- When I was a kid one of my neighbors was a very intelligent businessman. 20 years later I saw him on TV - he became nationally well known for his involvement into a big lawsuit.
+- My primary school and the building that I had most courses in college was named after the same person: [Shao Yifu](https://en.wikipedia.org/wiki/Run_Run_Shaw). He was a Hong Kong entertainment mogul who have donated more than 4 billion HK dollars to education.
