@@ -13,6 +13,7 @@ import Demo from './utils/Demo';
 const { PUBLIC_URL } = process.env;
 
 function App() {
+  console.log(PUBLIC_URL);
   return (
     <Router basename={PUBLIC_URL}>
       <div className='App relative pb-5 min-h-screen bg-gray-100 font-body'>

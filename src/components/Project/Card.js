@@ -19,10 +19,9 @@ const Card = ({ project }) => {
       </div>
       <div className='grid grid-cols-1 border'>
         {project.image.map((i, key) => (
-          <a href={project.link} target='_blank' rel='noreferrer'>
+          <a href={project.link} target='_blank' key={key} rel='noreferrer'>
             <img
               className='col-span-1'
-              key={key}
               src={`${process.env.PUBLIC_URL}/images/projects/${i}`}
               alt='project display'
             ></img>
