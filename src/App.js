@@ -10,9 +10,11 @@ import Information from './components/Information';
 import Header from './components/Header';
 import Demo from './utils/Demo';
 
+const { PUBLIC_URL } = process.env;
+
 function App() {
   return (
-    <Router>
+    <Router basename={PUBLIC_URL}>
       <div className='App relative pb-5 min-h-screen bg-gray-100 font-body'>
         <Header />
         <div className='xl:flex w-11/12 2xl:w-4/5 mx-auto my-10 2xl:my-20 '>
