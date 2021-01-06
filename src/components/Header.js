@@ -47,7 +47,7 @@ const Header = () => {
                 <animated.div
                   key={key}
                   style={props}
-                  className='right-0 top-0 lg:hidden px-5 py-5 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
+                  className='right-0 top-0 lg:hidden px-5 py-4 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
                 >
                   <div className='flex justify-end'>
                     <FontAwesomeIcon
