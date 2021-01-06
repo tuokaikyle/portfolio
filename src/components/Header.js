@@ -57,8 +57,8 @@ const Header = () => {
                       }}
                     />
                   </div>
-                  <div className='lg:hidden divide-y pt-2'>
-                    {menu('gray-text py-3 hover:text-blue-500')}
+                  <div className='lg:hidden divide-y pt-3'>
+                    {menu('gray-text py-4 hover:text-blue-500')}
                   </div>
                 </animated.div>
               )
