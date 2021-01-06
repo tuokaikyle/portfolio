@@ -12,14 +12,15 @@ const Header = () => {
 
   function menu(twcss) {
     return items.map((i, key) => (
-      <div
-        className={twcss}
-        key={key}
-        onClick={() => {
-          setShow(false);
-        }}
-      >
-        <Link to={i.toLowerCase()}>{i}</Link>
+      <div className={twcss} key={key}>
+        <Link
+          to={i.toLowerCase()}
+          onClick={() => {
+            setShow(false);
+          }}
+        >
+          {i}
+        </Link>
       </div>
     ));
   }
@@ -40,12 +41,7 @@ const Header = () => {
       </Link>
       {/* side bar 小屏幕或者以上的时候不显示 */}
       {/* 只用一个onClick事件 绑定setShow */}
-      <div
-        className='right-0 lg:hidden px-5 py-4'
-        onClick={() => {
-          setShow(!show);
-        }}
-      >
+      <div className='right-0 lg:hidden'>
         {show ? (
           menuTransitions.map(
             ({ item, key, props }) =>
@@ -53,24 +49,31 @@ const Header = () => {
                 <animated.div
                   key={key}
                   style={props}
-                  className='right-0 top-0 lg:hidden px-5 py-4 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
+                  className='right-0 top-0 lg:hidden px-5 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
                 >
-                  <div className='flex justify-end'>
+                  <div
+                    className='flex justify-end py-4'
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                  >
                     <FontAwesomeIcon icon={faTimes} />
                   </div>
-                  <div className='lg:hidden divide-y pt-3'>
+                  <div className='lg:hidden divide-y'>
                     {menu('gray-text py-4 hover:text-blue-500')}
                   </div>
                 </animated.div>
               )
           )
         ) : (
-          <FontAwesomeIcon
-            icon={faBars}
-            // onClick={() => {
-            //   setShow(!show);
-            // }}
-          />
+          <div
+            className='px-5 py-4'
+            onClick={() => {
+              setShow(!show);
+            }}
+          >
+            <FontAwesomeIcon icon={faBars} />
+          </div>
         )}
       </div>
       {/* nav bar - 小屏幕或者以上的时候横排展示 */}
