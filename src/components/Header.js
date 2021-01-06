@@ -35,7 +35,7 @@ const Header = () => {
     // 包含三个项目 姓名, sidebar, navbar. 下面有一条横线 横排展示 分在两侧边缘 小屏幕或者以上时候分列在左侧
     <div className='text-sm border-b flex justify-between lg:justify-start lg:divide-x lg:divide-color bg-content uppercase'>
       {/* 姓名栏目 粗体 左右padding 上下padding 字号大小 */}
-      <Link to='/' className='font-bold px-10 py-5'>
+      <Link to='/' className='font-bold px-10 py-4'>
         {name}
       </Link>
       {/* side bar 小屏幕或者以上的时候不显示 */}
