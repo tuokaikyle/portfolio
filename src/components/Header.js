@@ -39,7 +39,13 @@ const Header = () => {
         {name}
       </Link>
       {/* side bar 小屏幕或者以上的时候不显示 */}
-      <div className='right-0 lg:hidden px-5 py-4'>
+      {/* 只用一个onClick事件 绑定setShow */}
+      <div
+        className='right-0 lg:hidden px-5 py-4'
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
         {show ? (
           menuTransitions.map(
             ({ item, key, props }) =>
@@ -50,12 +56,7 @@ const Header = () => {
                   className='right-0 top-0 lg:hidden px-5 py-4 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
                 >
                   <div className='flex justify-end'>
-                    <FontAwesomeIcon
-                      icon={faTimes}
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                    />
+                    <FontAwesomeIcon icon={faTimes} />
                   </div>
                   <div className='lg:hidden divide-y pt-3'>
                     {menu('gray-text py-4 hover:text-blue-500')}
@@ -66,9 +67,9 @@ const Header = () => {
         ) : (
           <FontAwesomeIcon
             icon={faBars}
-            onClick={() => {
-              setShow(!show);
-            }}
+            // onClick={() => {
+            //   setShow(!show);
+            // }}
           />
         )}
       </div>
