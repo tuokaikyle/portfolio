@@ -276,7 +276,17 @@ export const project = [
     image: ['tomato.jpg'],
     description: [
       "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management.",
-      'I use the MERN stack, MongoDB, Express, React and Nodejs to build this app. Materializecss is used for the User Interface part.',
+      'The MERN stack, namely MongoDB, Express, React and Nodejs is used to build this app. Materializecss is used for the User Interface.',
+    ],
+  },
+  {
+    title: 'Personal Website',
+    subtitle: 'This very website',
+    link: 'https://tuokaikyle.github.io/portfolio/',
+    image: ['portfolio.jpg'],
+    description: [
+      `This project integrates my resume and portfolio at the same place. I also added some facts about myself so that the website doesn't look as serious as a pure resume website.`,
+      "React(creat-react-app) and Tailwindcss are used in this project. Firebase is used to handle user's messages.",
     ],
   },
 ];

@@ -19,7 +19,7 @@ const Header = () => {
           setShow(false);
         }}
       >
-        <Link to={i}>{i}</Link>
+        <Link to={i.toLowerCase()}>{i}</Link>
       </div>
     ));
   }
