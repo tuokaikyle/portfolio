@@ -39,7 +39,7 @@ const Header = () => {
         {name}
       </Link>
       {/* side bar 小屏幕或者以上的时候不显示 */}
-      <div className='right-0 lg:hidden px-5 py-5'>
+      <div className='right-0 lg:hidden px-5 py-4'>
         {show ? (
           menuTransitions.map(
             ({ item, key, props }) =>
@@ -57,7 +57,7 @@ const Header = () => {
                       }}
                     />
                   </div>
-                  <div className='lg:hidden divide-y'>
+                  <div className='lg:hidden divide-y pt-2'>
                     {menu('gray-text py-3 hover:text-blue-500')}
                   </div>
                 </animated.div>
