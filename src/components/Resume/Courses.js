@@ -10,8 +10,8 @@ const Courses = ({ courses }) => {
             <div className='hidden md:block gray-text'>{i.number}</div>
             <div className='hidden md:block w-2'></div>
 
-            <pre className='hidden md:block'>{i.title}</pre>
-            <div className='md:hidden my-2'>{i.title}</div>
+            <p className='hidden md:block'>{i.title}</p>
+            <p className='md:hidden my-2'>{i.title}</p>
           </div>
         ))}
     </div>

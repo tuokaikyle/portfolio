@@ -77,12 +77,12 @@ const Skills = ({ skills }) => {
               )}
       </div>
       <div className='flex m-5'>
-        <div className='mr-5 text-xs'>* Most skilled</div>
-        <div className='bg-blue-800 w-5 h-2 my-auto'></div>
-        <div className='bg-blue-700 w-5 h-2 my-auto'></div>
-        <div className='bg-blue-600 w-5 h-2 my-auto'></div>
-        <div className='bg-blue-500 w-5 h-2 my-auto'></div>
-        <div className='bg-blue-400 w-5 h-2 my-auto'></div>
+        <div className='mr-5 text-xs'>Most skilled</div>
+        <div className='bg-blue-800 w-5 h-3 my-auto'></div>
+        <div className='bg-blue-700 w-5 h-3 my-auto'></div>
+        <div className='bg-blue-600 w-5 h-3 my-auto'></div>
+        <div className='bg-blue-500 w-5 h-3 my-auto'></div>
+        <div className='bg-blue-400 w-5 h-3 my-auto'></div>
         <div className='ml-5 text-xs'>Less skilled</div>
       </div>
     </div>

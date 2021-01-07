@@ -12,7 +12,9 @@ const Card = ({ project }) => {
           rel='noreferrer'
           className='flex'
         >
-          <div className='text-2xl mr-2'>{project.title}</div>
+          <div className='text-2xl font-bold capitalize mr-2'>
+            {project.title}
+          </div>
           <FontAwesomeIcon icon={faLink} className='text-gray-400 mt-2' />
         </a>
         <div className='pt-3 pb-7'>{project.subtitle}</div>

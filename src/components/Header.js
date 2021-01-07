@@ -34,9 +34,9 @@ const Header = () => {
 
   return (
     // 包含三个项目 姓名, sidebar, navbar. 下面有一条横线 横排展示 分在两侧边缘 小屏幕或者以上时候分列在左侧
-    <div className='text-sm border-b flex justify-between lg:justify-start lg:divide-x lg:divide-color bg-content uppercase'>
+    <div className='border-b flex justify-between lg:justify-start lg:divide-x lg:divide-color bg-content uppercase text-sm font-header'>
       {/* 姓名栏目 粗体 左右padding 上下padding 字号大小 */}
-      <Link to='/' className='font-bold px-10 py-4'>
+      <Link to='/' className='font-bold px-10 py-5'>
         {name}
       </Link>
       {/* side bar 小屏幕或者以上的时候不显示 */}
@@ -49,10 +49,10 @@ const Header = () => {
                 <animated.div
                   key={key}
                   style={props}
-                  className='right-0 top-0 lg:hidden px-5 fixed h-full w-2/3 sm:w-1/3 bg-white shadow'
+                  className='right-0 top-0 lg:hidden px-5 fixed h-full w-2/3 bg-white shadow'
                 >
                   <div
-                    className='flex justify-end py-4'
+                    className='flex justify-end py-5'
                     onClick={() => {
                       setShow(!show);
                     }}
@@ -67,7 +67,7 @@ const Header = () => {
           )
         ) : (
           <div
-            className='px-5 py-4'
+            className='px-5 py-5'
             onClick={() => {
               setShow(!show);
             }}
