@@ -4,7 +4,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ project }) => {
   return (
-    <div className='py-10 w-11/12 mx-auto border-b'>
+    <div className='py-10 mx-auto'>
       <div>
         <a
           href={project.link}

@@ -11,7 +11,7 @@ const Projects = () => {
         title={'Project'}
         subtitle={'A SELECTION OF PROJECTS'}
       ></PageTitile>
-      <div className='px-10 py-12'>
+      <div className='px-10 py-2 divide-y'>
         {project.map((i, key) => (
           <div key={key}>
             <Card project={i} />
