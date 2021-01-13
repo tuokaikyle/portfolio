@@ -8,10 +8,10 @@ const Projects = () => {
   return (
     <div>
       <PageTitile
-        title={'Project'}
+        title={'Projects'}
         subtitle={'A SELECTION OF PROJECTS'}
       ></PageTitile>
-      <div className='px-10 py-2 lg:px-12 divide-y'>
+      <div className='px-10 py-2 lg:px-12'>
         {project.map((i, key) => (
           <div key={key}>
             <Card project={i} />

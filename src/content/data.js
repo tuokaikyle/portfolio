@@ -251,12 +251,19 @@ export const resume = {
 export const project = [
   {
     title: 'Instagram-Clone',
-    subtitle: 'Trying to implement a mini Instagram',
+    subtitle: 'A mini Instagram',
     link: 'https://instagram-clone-1112.herokuapp.com/',
     image: ['insta.jpg'],
-    description: [
-      'This project creates basic functionalities that Instagram has, including user [signup, login, logout], [add, delete, search, update] posts or personal information, [like, dislike] posts, [follow, unfollow] other users, comment on posts and others.',
-      'It uses the MERN stack, namely MongoDb, Express, React and Nodejs. It also uses Materializecss to outline the user-interface, Cloudinary to store the uploaded image and Sendgrid to manage the emails for password-resetting.',
+    description:
+      'This project tries to implement the basic functionalities of Instagram, including user signup, login, logout, add, delete, search, update posts or personal information, like, dislike posts, follow, unfollow other users, comment on posts and others.',
+    keyword: [
+      'MongoDb',
+      'Express',
+      'React',
+      'NodeJS',
+      'Materializecss',
+      'Cloudinary',
+      'Sendgrid',
     ],
   },
   {
@@ -264,29 +271,26 @@ export const project = [
     subtitle: 'A fully functional online shop website',
     link: 'https://onlineshop-mern.herokuapp.com/',
     image: ['shop.jpg'],
-    description: [
-      'The functionalities include user [signup, login, logout], [see, search, purchase] products, [add, update] personal information. The owner of the website can also [add, update, delete] product.',
-      'This project uses the MERN stack, namely MongoDb, Express, React and Nodejs. React Bootstrap is used for user interface.',
-    ],
+    description:
+      'The functionalities include user signup, login, logout, see, search, purchase products, add, update personal information. The owner of the website can also add, update, delete product.',
+    keyword: ['MongoDb', 'Express', 'React', 'NodeJS', 'React Bootstrap'],
   },
   {
     title: 'Tomato',
     subtitle: 'A todo app for better time management',
     link: 'https://tomatolist.herokuapp.com/',
     image: ['tomato.jpg'],
-    description: [
+    description:
       "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management.",
-      'The MERN stack, namely MongoDB, Express, React and Nodejs is used to build this app. Materializecss is used for the User Interface.',
-    ],
+    keyword: ['MongoDb', 'Express', 'React', 'NodeJS', 'Materializecss'],
   },
   {
     title: 'Personal Website',
     subtitle: 'This very website',
     link: 'https://tuokaikyle.github.io/portfolio/',
     image: ['portfolio.jpg'],
-    description: [
-      `This project integrates my resume and portfolio at the same place. I also added some facts about myself so that the website doesn't look as serious as a pure resume website.`,
-      "React(creat-react-app) and Tailwindcss are used in this project. Firebase is used to handle user's messages.",
-    ],
+    description:
+      "This is a serverless website that integrates my resume and projects at the same place. I also added some facts about myself so that the website doesn't look as serious as a pure resume website.",
+    keyword: ['React', 'Tailwindcss', 'Firebase'],
   },
 ];

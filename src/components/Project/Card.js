@@ -4,7 +4,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ project }) => {
   return (
-    <div className='py-10 mx-auto'>
+    <div className='my-12 mx-auto shadow-md bg-gradient-to-r from-gray-100 via-gray-50 to-white'>
       <div>
         <a
           href={project.link}
@@ -12,18 +12,23 @@ const Card = ({ project }) => {
           rel='noreferrer'
           className='flex'
         >
-          <div className='text-2xl font-bold capitalize mr-2'>
+          <div className='pl-5 pt-6 font-bold uppercase text-gray-600 mr-2 text-lg'>
             {project.title}
           </div>
-          <FontAwesomeIcon icon={faLink} className='text-gray-400 mt-2' />
+          <FontAwesomeIcon
+            icon={faLink}
+            className='text-gray-400 mt-7 text-sm'
+          />
         </a>
-        <div className='pt-3 pb-7'>{project.subtitle}</div>
+        <div className='pl-5 pt-3 pb-7 text-xs uppercase text-gray-600'>
+          {project.subtitle}
+        </div>
       </div>
-      <div className='grid grid-cols-1 border'>
+      <div className='grid grid-cols-1'>
         {project.image.map((i, key) => (
           <a href={project.link} target='_blank' key={key} rel='noreferrer'>
             <img
-              className='col-span-1'
+              className='col-span-1 border-b border-t'
               src={`${process.env.PUBLIC_URL}/images/projects/${i}`}
               alt='project display'
             ></img>
@@ -31,13 +36,18 @@ const Card = ({ project }) => {
         ))}
       </div>
 
-      <ul className='list-disc list-inside w-4/5 mx-auto mt-10'>
-        {project.description.map((i, key) => (
-          <li key={key} className='pb-4'>
+      <div className='px-5 py-5'>{project.description}</div>
+      <div className='flex px-5 pb-10 flex-wrap'>
+        {project.keyword.map((i, key) => (
+          <div
+            key={key}
+            className='transition duration-500 ease-in-out rounded-full text-sm px-2 py-1 mx-2 my-1 border
+            transform hover:-translate-y-1 hover:scale-110 hover:border-0'
+          >
             {i}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
