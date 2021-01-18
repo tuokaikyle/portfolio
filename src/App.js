@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Information from './components/Information';
 import Header from './components/Header';
-import Demo from './utils/Demo';
+// import Demo from './utils/Demo';
 
 const { PUBLIC_URL } = process.env;
 

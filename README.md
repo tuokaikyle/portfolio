@@ -1,7 +1,9 @@
-## 原网站的字号
+## Personal website
 
-大小
+A Personal website built using React, Tailwindcss and Firebase
 
-页面的名字，和 information name 一样大
+Greatly inspired by mldangelo's [personal-site](https://github.com/mldangelo/personal-site) repository.
 
-header name 是 bold, header content 是 subtitle, information 的 email, 页面的 subtitle 一样大
+### To be done
+
+- Add Google Analytics

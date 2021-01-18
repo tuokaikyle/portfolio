@@ -16,7 +16,7 @@ const Contact = () => {
         hour12: false,
       });
       const send = { name, email, message, dtime };
-      console.log(send);
+      // console.log(send);
       await projectFirestore
         .collection('contact')
         .add(send)
