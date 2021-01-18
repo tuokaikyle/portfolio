@@ -106,11 +106,11 @@ export const resume = {
       ],
     },
     {
-      company: 'Qiuyuebai Information Technology Limited',
-      position: 'Marketing specialist',
-      daterange: '2017 - 2017',
+      company: 'Qiuhei Information Technology Limited',
+      position: 'Frontend Developer',
+      daterange: '2017 - 2018',
       points: [
-        "Analyzed product's performance on App Store and Google Play",
+        'Developed html and css web pages',
         'Discussed plans of marketing and operations',
       ],
     },
