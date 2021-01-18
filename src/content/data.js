@@ -281,8 +281,15 @@ export const project = [
     link: 'https://tomatolist.herokuapp.com/',
     image: ['tomato.jpg'],
     description:
-      "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management.",
-    keyword: ['MongoDb', 'Express', 'React', 'NodeJS', 'Materializecss'],
+      "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management. This app also uses Auth0 for user authentication, but for demonstration purposes I didn't set any page protected.",
+    keyword: [
+      'MongoDb',
+      'Express',
+      'React',
+      'NodeJS',
+      'Materializecss',
+      'auth0',
+    ],
   },
   {
     title: 'Personal Website',

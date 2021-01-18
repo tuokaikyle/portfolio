@@ -11,3 +11,4 @@ Steps to run:
 ### To be done
 
 - Add Google Analytics
+- Is it possible to let viewers to send messages to my google sheet?
