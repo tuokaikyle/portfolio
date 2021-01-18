@@ -1,8 +1,12 @@
 ## Personal website
 
-A Personal website built using React, Tailwindcss and Firebase
+A serverless website built using React, Tailwindcss and Firebase.
 
-Greatly inspired by mldangelo's [personal-site](https://github.com/mldangelo/personal-site) repository.
+Steps to run:
+
+- `npm install`
+- Create a .env file at the root
+- Start a firebase project, and add the configuration of this project to the .env file.
 
 ### To be done
 
