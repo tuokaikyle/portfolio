@@ -151,7 +151,7 @@ export const resume = {
       category: ['Web Development'],
     },
     {
-      title: 'Amazon Web Services',
+      title: 'AWS',
       competency: 3,
       category: ['Tools'],
     },
@@ -181,7 +181,7 @@ export const resume = {
       category: ['Tools'],
     },
     {
-      title: 'Google Cloud Platform',
+      title: 'GCP',
       competency: 1,
       category: ['Tools'],
     },

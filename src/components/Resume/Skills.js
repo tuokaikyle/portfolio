@@ -4,7 +4,6 @@ const Skills = ({ skills }) => {
   const c = skills.map((i) => [...i.category]).flat(1);
   const categories = ['All'].concat([...new Set(c)]);
   const [active, setActive] = useState('All');
-
   skills.sort((b, a) => parseFloat(a.competency) - parseFloat(b.competency));
 
   return (

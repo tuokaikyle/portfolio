@@ -76,7 +76,7 @@ const Header = () => {
           </div>
         )}
       </div>
-      {/* nav bar - 小屏幕或者以上的时候横排展示 */}
+      {/* nav bar - 小屏幕或者以上的时横排展示 */}
       <div className='hidden lg:flex lg:divide-x lg:divide-color'>
         {menu('place-self-center px-5 gray-text hover:text-blue-500')}
       </div>

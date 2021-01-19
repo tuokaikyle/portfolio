@@ -42,6 +42,7 @@ const Information = () => {
             />
           </a>
         </div>
+
         <p className='copyright text-gray-400 mt-4'>&copy; 2021</p>
       </div>
     </div>
