@@ -32,17 +32,17 @@ const Information = () => {
           <a href={information.instagram.link} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
               icon={faInstagram}
-              className='text-gray-400 text-2xl'
+              className='text-gray-400 text-2xl mr-2'
             />
           </a>
           <a href={information.linkedin.link}>
             <FontAwesomeIcon
               icon={faLinkedin}
-              className='text-gray-400 text-2xl mx-4'
+              className='text-gray-400 text-2xl mx-2'
             />
           </a>
         </div>
-        {/* <p className='copyright text-gray-400'>&copy; 2021</p> */}
+        <p className='copyright text-gray-400 mt-4'>&copy; 2021</p>
       </div>
     </div>
   );

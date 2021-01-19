@@ -131,7 +131,12 @@ export const resume = {
       category: ['Web Development', 'Languages'],
     },
     {
-      title: 'Nodejs/Express',
+      title: 'Nodejs',
+      competency: 4,
+      category: ['Web Development'],
+    },
+    {
+      title: 'Express',
       competency: 4,
       category: ['Web Development'],
     },
@@ -201,8 +206,18 @@ export const resume = {
       category: ['Web Development', 'Languages'],
     },
     {
-      title: 'Tailwindcss/Materializecss',
+      title: 'Tailwindcss',
+      competency: 5,
+      category: ['Web Development'],
+    },
+    {
+      title: 'Materializecss',
       competency: 4,
+      category: ['Web Development'],
+    },
+    {
+      title: 'Next.js',
+      competency: 5,
       category: ['Web Development'],
     },
     {

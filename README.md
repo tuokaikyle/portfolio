@@ -12,3 +12,5 @@ Steps to run:
 
 - Add Google Analytics
 - Is it possible to let viewers to send messages to my google sheet?
+- Animation on Skills section
+- Animation on Projects
