@@ -168,6 +168,11 @@ export const resume = {
       category: ['Databases'],
     },
     {
+      title: 'PostgreSQL',
+      competency: 3,
+      category: ['Databases'],
+    },
+    {
       title: 'SQL',
       competency: 3,
       category: ['Databases', 'Languages'],
@@ -255,7 +260,7 @@ export const resume = {
     {
       title: 'GraphQL',
       competency: 1,
-      category: ['Web Development', 'Databases'],
+      category: ['Web Development'],
     },
     {
       title: 'Pandas',
