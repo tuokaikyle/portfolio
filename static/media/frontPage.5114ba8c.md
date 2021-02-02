@@ -7,7 +7,7 @@ This is my personal website where you can find my CV & projects. Please feel fre
 - Currently I consider myself a _junior level_ web developer who uses React and NodeJS in most of my projects.
 - I also use Vue and Next.
 - I love _tailwind_!
-- I am proactively exploring other trending technologies like Serverless architecture, GraphQL and Kubernates, Cloud Computing.
+- I am proactively exploring other trending technologies like Serverless, GraphQL, Kubernetes and Cloud Computing.
 - I hold the _AWS_ certificate of Solutions Architect - Associate.
 - Other than programming, I enjoy _soccer_, swimming, ice-skating, table tennis, reading and cooking.
 
