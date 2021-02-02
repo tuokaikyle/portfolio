@@ -18,7 +18,7 @@ export const information = {
 
 export const front = {
   title: 'Welcome',
-  subtitle: 'A personal website built using React and Tailwindcss',
+  subtitle: 'My personal website built using React and Tailwind',
 };
 
 export const resume = {
@@ -87,12 +87,19 @@ export const resume = {
       degree: 'Master of Information Technology',
       link: 'https://www.uq.edu.au/',
       year: 2020,
+      description: [
+        'Achieved High Distinction for the project of Idea Hub Mentor Platform as scrum master',
+        'Focused on Software Engineering, Web Developing and Database Systems',
+      ],
     },
     {
       school: 'Soochow University',
       degree: 'Bachelor of Arts in English Literature',
       link: 'http://www.suda.edu.cn/',
       year: 2015,
+      description: [
+        'Focused on English literature, Linguistics, translation and interpretation',
+      ],
     },
   ],
   experiences: [
