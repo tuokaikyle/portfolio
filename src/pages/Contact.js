@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PageTitile from '../components/PageTitile';
-import { projectFirestore } from '../firebase/config';
+import { appendSpreadsheet } from '../utils/spreadsheet';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -16,17 +16,8 @@ const Contact = () => {
         hour12: false,
       });
       const send = { name, email, message, dtime };
-      // console.log(send);
-      await projectFirestore
-        .collection('contact')
-        .add(send)
-        .then((back) => {
-          setResult(back.id);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      // need a loader and succeed message
+
+      await setResult(appendSpreadsheet(send));
     }
     setName('');
     setEmail('');
@@ -40,10 +31,10 @@ const Contact = () => {
       ></PageTitile>
       <form className='w-11/12 sm:w-3/4  px-10 py-12 mx-auto'>
         <div className='md:flex'>
-          <span className='text-gray-700 w-1/6 pt-1'>Name</span>
+          <span className='text-gray-700 w-1/6 mt-1'>Name</span>
           <input
             type='text'
-            className='mt-2 mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
+            className='mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
             placeholder='Your name'
             value={name}
             onChange={(e) => {
@@ -52,10 +43,10 @@ const Contact = () => {
           />
         </div>
         <div className='md:flex'>
-          <span className='text-gray-700 w-1/6 pt-1'>Contact</span>
+          <span className='text-gray-700 w-1/6 mt-1'>Contact</span>
           <input
             type='text'
-            className='mt-2 mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
+            className='mb-5 form-input mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
             placeholder='Your email or phone'
             value={email}
             onChange={(e) => {
@@ -64,9 +55,9 @@ const Contact = () => {
           />
         </div>
         <div className='md:flex'>
-          <span className='text-gray-700 w-1/6 pt-1'>Message</span>
+          <span className='text-gray-700 w-1/6 mt-1'>Message</span>
           <textarea
-            className='mt-2 mb-5 form-textarea mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
+            className='mb-5 form-textarea mt-1 block w-full border focus:outline-none focus:ring focus:border-opacity-0 rounded-md p-1 focus:border-blue-500'
             rows='3'
             placeholder='Feel free to leave me a message here'
             value={message}

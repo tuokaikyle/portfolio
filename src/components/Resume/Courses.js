@@ -2,7 +2,8 @@ import React from 'react';
 
 const Courses = ({ courses }) => {
   return (
-    <div className='md:flex md:flex-wrap md:justify-center'>
+    <div className=''>
+      {/* <div className='md:flex md:flex-wrap md:justify-center'> */}
       {courses
         .sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0))
         .map((i, key) => (

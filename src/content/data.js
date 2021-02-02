@@ -4,15 +4,17 @@ export const information = {
   email: 'tuo_kai@outlook.com',
   keywords: ['software engineer', 'web developer', 'solutions architect'],
   copyRight: 'Pty Ltd',
+  github: {
+    link: 'https://github.com/tuokaikyle',
+    label: 'GitHub',
+  },
   instagram: {
     link: 'https://www.instagram.com/tuokaikyle/',
     label: 'Instagram',
-    icon: '@fortawesome/free-brands-svg-icons/faInstagram',
   },
   linkedin: {
     link: 'https://www.linkedin.com/in/tuo/',
     label: 'LinkedIn',
-    icon: '@fortawesome/free-brands-svg-icons/faLinkedinIn',
   },
 };
 
@@ -292,7 +294,7 @@ export const project = [
     link: 'https://instagram-clone-1112.herokuapp.com/',
     image: ['insta.jpg'],
     description:
-      'This project tries to implement the basic functionalities of Instagram, including user signup, login, logout, add, delete, search, update posts or personal information, like, dislike posts, follow, unfollow other users, comment on posts and others.',
+      'This project tries to implement the basic functionalities of Instagram, including user authentication and operations on posts, likes, followers and comments.',
     keyword: [
       'MongoDb',
       'Express',
@@ -309,7 +311,7 @@ export const project = [
     link: 'https://onlineshop-mern.herokuapp.com/',
     image: ['shop.jpg'],
     description:
-      'The functionalities include user signup, login, logout, see, search, purchase products, add, update personal information. The owner of the website can also add, update, delete product.',
+      'The functionalities include user authentication; view, search and purchase products; update personal information; admin add, update, delete products.',
     keyword: ['MongoDb', 'Express', 'React', 'NodeJS', 'React Bootstrap'],
   },
   {
@@ -318,7 +320,7 @@ export const project = [
     link: 'https://tomatolist.herokuapp.com/',
     image: ['tomato.jpg'],
     description:
-      "The app is inspired by Alex Czarto's theory, The Four Quadrants of Time Management, which categorize one's future tasks into quadrants in order to have better time management. This app also uses Auth0 for user authentication, but for demonstration purposes I didn't set any page protected.",
+      "The app is inspired by Alex Czarto's theory, the 4 quadrants of time management, which categorize one's future tasks into quadrants in order to have better time management.",
     keyword: [
       'MongoDb',
       'Express',
@@ -334,7 +336,7 @@ export const project = [
     link: 'https://tuokaikyle.github.io/portfolio/',
     image: ['portfolio.jpg'],
     description:
-      "This is a serverless website that integrates my resume and projects at the same place. I also added some facts about myself so that the website doesn't look as serious as a pure resume website.",
+      'This project uses serverless architecture that integrates my resume and projects at the same place.',
     keyword: ['React', 'Tailwindcss', 'Firebase'],
   },
 ];

@@ -1,7 +1,11 @@
 import React from 'react';
 import { information } from '../content/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin,
+  faInstagram,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Information = () => {
   return (
@@ -29,21 +33,29 @@ const Information = () => {
 
       <div className='py-5'>
         <div className='justify-center xl:justify-start flex mt-4'>
+          <a href={information.github.link} target='_blank' rel='noreferrer'>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className='text-gray-400 text-2xl mr-2'
+            />
+          </a>
           <a href={information.instagram.link} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
               icon={faInstagram}
-              className='text-gray-400 text-2xl mr-2'
+              className='text-gray-400 text-2xl mx-2'
             />
           </a>
           <a href={information.linkedin.link}>
             <FontAwesomeIcon
               icon={faLinkedin}
-              className='text-gray-400 text-2xl mx-2'
+              className='text-gray-400 text-2xl ml-2'
             />
           </a>
         </div>
 
-        <p className='copyright text-gray-400 mt-4'>&copy; 2021</p>
+        <p className='copyright text-gray-400 text-sm mt-4'>
+          &copy; Kai Tuo 2020
+        </p>
       </div>
     </div>
   );

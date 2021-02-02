@@ -4,7 +4,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ project }) => {
   return (
-    <div className='my-12 mx-auto shadow-md bg-gradient-to-r from-gray-100 via-gray-50 to-white'>
+    <div className='my-16 mx-auto shadow-lg bg-gradient-to-r from-gray-100 via-gray-50 to-white'>
       <div>
         <a
           href={project.link}
