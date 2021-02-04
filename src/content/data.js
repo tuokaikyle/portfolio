@@ -280,6 +280,11 @@ export const resume = {
       category: ['Machine Learning', 'Data Science'],
     },
     {
+      title: 'Seaborn',
+      competency: 1,
+      category: ['Data Science'],
+    },
+    {
       title: 'Firebase',
       competency: 1,
       category: ['Tools', 'Web Development'],

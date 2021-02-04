@@ -17,8 +17,8 @@ const Skills = ({ skills }) => {
             }}
             className='m-2 px-4 py-1 mb-5 transition duration-500 ease-in-out rounded-full
                         bg-gray-100 text-gray-600 
-                        hover:bg-white hover:text-blue-500 hover:ring-1
-                        focus:outline-none focus:bg-white focus:ring-2 focus:text-blue-500 focus:ring-blue-500'
+                        hover:bg-gray-50
+                        focus:outline-none focus:bg-white focus:ring-1 focus:text-blue-500 focus:ring-blue-500'
           >
             {i}
           </button>
