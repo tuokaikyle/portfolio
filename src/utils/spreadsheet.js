@@ -20,7 +20,7 @@ export const appendSpreadsheet = async (row) => {
     await doc.loadInfo();
     const sheet = doc.sheetsById[SHEET_ID];
     const result = await sheet.addRow(row);
-    console.log(row);
+    // console.log(row);
     return result;
   } catch (e) {
     console.log(e);
