@@ -5,6 +5,8 @@ import Courses from '../components/Resume/Courses';
 import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
 import PageTitile from '../components/PageTitile';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const chapters = ['EDUCATION', 'EXPERIENCE', 'SKILLS', 'COURSES'];
 
@@ -40,6 +42,17 @@ const Resume = () => {
           </div>
           <Courses courses={resume.courses} />
         </div>
+        <button className='mt-10'>
+          <a href='cv.pdf' target='_blank' rel='noopener noreferrer'>
+            <div className='px-5 py-2 mx-2 my-1 border flex rounded-md text-lg hover:bg-gray-100'>
+              <div>Downdload PDF</div>
+              <FontAwesomeIcon
+                icon={faDownload}
+                className='text-gray-400 my-auto ml-3'
+              />
+            </div>
+          </a>
+        </button>
       </div>
     </div>
   );
