@@ -1,6 +1,8 @@
 ## Personal website
 
-A serverless website built using React and Tailwind. This website has a top bar as the menu, a side bar to display personal highlights, and four pages:
+A serverless website built using React and Tailwind.
+
+This website has a **top bar** as the menu, a **side bar** to display personal highlights, and four pages:
 
 - Front page: to display welcoming message and a brief introduction
 - Resume page: display web version resume, also allow pdf download
@@ -23,6 +25,10 @@ A serverless website built using React and Tailwind. This website has a top bar 
    - Eenable google sheet api
    - Connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
 4. `npm start`
+
+## Notes
+
+Currently the content on front page is frontPage.md + Skills, as a result the Skills section is repeated in two pages: Front and Resume. You may consider to change it to frontPage.md + something else.
 
 ## To be done
 
