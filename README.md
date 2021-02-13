@@ -9,20 +9,22 @@ A serverless website built using React and Tailwind. This website has a top bar 
 
 ## Data preparation
 
-- Modify `src/content/frontPage.md`. This is for the content shown on front page.
-- Modify `src/content/data.js` without changing the file structure.
-- Navigate to `public/images` and add your own images. Make sure the image names are same as the ones defined in 'data.js'.
-- Create your resume as 'cv.pdf' and put it into `public/`. This is for viewers to download the resume.
+- `src/content/frontPage.md` This is for the content shown on front page.
+- `src/content/data.js` Be careful not to change the variable names in this file.
+- `public/images` Add your own images. The image names should be the same as the ones defined in 'data.js'.
+- `public/cv.pdf` This is for viewers to download the resume in pdf version.
 
-## Steps to run:
+## Steps to run
 
 1. `npm install`
 2. Create a .env file at the root
 3. A _tricky_ part: in order to let users send messages to your google spread sheet, you will need to
-   - create a google spread sheet
-   - enable google sheet api
-   - connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
+   - Create a google spread sheet
+   - Eenable google sheet api
+   - Connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
+4. `npm start`
 
 ## To be done
 
-- Add Google Analytics
+- [ ] Add Google Analytics
+- [x] Contact page: users send messages to google spread sheet
