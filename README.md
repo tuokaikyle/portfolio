@@ -1,7 +1,6 @@
 ## Personal website
 
-A serverless website built using React and Tailwind.
-This website has a top bar as the menu, a side bar to display personal highlights, and four pages:
+A serverless website built using React and Tailwind. This website has a top bar as the menu, a side bar to display personal highlights, and four pages:
 
 - Front page: to display welcoming message and a brief introduction
 - Resume page: display web version resume, also allow pdf download
@@ -20,10 +19,9 @@ This website has a top bar as the menu, a side bar to display personal highlight
 1. `npm install`
 2. Create a .env file at the root
 3. A _tricky_ part: in order to let users send messages to your google spread sheet, you will need to
-
-- create a google spread sheet
-- enable google sheet api
-- connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
+   - create a google spread sheet
+   - enable google sheet api
+   - connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
 
 ## To be done
 
