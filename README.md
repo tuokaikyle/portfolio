@@ -4,10 +4,10 @@ A serverless website built using React and Tailwind.
 
 This website has a **top bar** as the menu, a **side bar** to display personal highlights, and four pages:
 
-- Front page: to display welcoming message and a brief introduction
-- Resume page: display web version resume, also allow pdf download
-- Projects page: display cards of projects
-- Contact page: allow viewers to leave a message to you. The messages will be sent to your google spread sheet.
+- Front: Welcoming message, a brief introduction and a preview of skill set
+- Resume: Digital resume
+- Projects: Cards of projects
+- Contact: Allow viewers to leave a message to your google spread sheet
 
 ## Data preparation
 
@@ -28,7 +28,7 @@ This website has a **top bar** as the menu, a **side bar** to display personal h
 
 ## Notes
 
-Currently the content on front page is frontPage.md + Skills, as a result the Skills section is repeated in two pages: Front and Resume. You may consider to change it to frontPage.md + something else.
+Currently the content on front page is frontPage.md + Skills, as a result the Skills section is repeated twice, in Front and Resume. You may consider to change to frontPage.md + something else.
 
 ## To be done
 
