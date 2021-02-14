@@ -28,7 +28,9 @@ This website has a **top bar** as the menu, a **side bar** to display personal h
 
 ## Notes
 
-Currently the content on front page is frontPage.md + Skills, as a result the Skills section is repeated twice, in Front and Resume. You may consider to change to frontPage.md + something else.
+Currently the content on front page is from frontPage.md and Skills from Resume page, which means the Skills section appears in both Front page and Resume Page.
+
+You may consider to change the Front page to frontPage.md + something else.
 
 ## To be done
 
