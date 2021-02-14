@@ -28,9 +28,9 @@ This website has a **top bar** as the menu, a **side bar** to display personal h
 
 ## Notes
 
-Currently the content on front page is from frontPage.md and Skills from Resume page, which means the Skills section appears in both Front page and Resume Page.
+Currently the Skills section appears in both Front page and Resume Page.
 
-You may consider to change the Front page to frontPage.md + something else.
+You may consider to remove the Skills section from Front page or change it to something else.
 
 ## To be done
 
