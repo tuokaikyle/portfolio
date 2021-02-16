@@ -26,12 +26,6 @@ This website has a **top bar** as the menu, a **side bar** to display personal h
    - Connect this sheet with your website project - basically it means to follow the steps in [this link](https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l). It seems a bit tricky, but believe me it is not!
 4. `npm start`
 
-## Notes
-
-Currently the Skills section appears in both Front page and Resume Page.
-
-You may consider to remove the Skills section from Front page or change it to something else.
-
 ## To be done
 
 - [ ] Add Google Analytics
