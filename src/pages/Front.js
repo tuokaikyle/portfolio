@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { front, navigation } from '../content/data';
 import PageTitile from '../components/PageTitile';
 
@@ -13,6 +13,11 @@ const Front = () => {
     .then((p) => {
       setText(p);
     });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='pb-12'>
       <PageTitile title={front.title} subtitle={front.subtitle}></PageTitile>
@@ -24,7 +29,8 @@ const Front = () => {
           <Link
             to={i.toLowerCase()}
             key={key}
-            className='px-2 py-1 text-sm border mx-2 hover:bg-gray-100 focus:bg-gray-200'
+            className='transition duration-300 ease-in-out text-sm px-2 py-1 mx-2 my-1 border
+            transform hover:-translate-y-1 hover:scale-110 hover:border-0'
           >
             {i}
           </Link>

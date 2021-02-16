@@ -53,9 +53,6 @@ body {
 .prose {
   max-width: 100%;
 }
-.prose a {
-  text-decoration: none;
-}
 
 em {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #b9f6ca 50%);

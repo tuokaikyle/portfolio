@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { resume } from '../content/data';
 import Skills from '../components/Resume/Skills';
 import Courses from '../components/Resume/Courses';
@@ -11,6 +11,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const chapters = ['EDUCATION', 'EXPERIENCE', 'SKILLS', 'COURSES'];
 
 const Resume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <PageTitile

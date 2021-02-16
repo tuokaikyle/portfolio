@@ -12,5 +12,6 @@ Hi, I'm Kai. I am a software engineer, web developer and an AWS certified soluti
 #### Other than Programming
 
 - I enjoy _soccer_, swimming, ice-skating, table tennis and pool.
+- Would love to learn how to draw human portrait.
 
 Please also checkout other sections of this website. Cheers!

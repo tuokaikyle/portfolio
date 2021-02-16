@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageTitile from '../components/PageTitile';
 import { appendSpreadsheet } from '../utils/spreadsheet';
 
@@ -23,6 +23,11 @@ const Contact = () => {
     setEmail('');
     setMessage('');
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <PageTitile

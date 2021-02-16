@@ -16,7 +16,7 @@ const Skills = ({ skills }) => {
               setActive(i);
             }}
             className='m-2 px-4 py-1 mb-5 transition duration-500 ease-in-out rounded-full border
-                        bg-gray-100 text-gray-700
+                        bg-gray-100 text-gray-800
                         hover:bg-gray-50
                         focus:outline-none focus:bg-white focus:text-blue-500 focus:border-blue-500'
           >

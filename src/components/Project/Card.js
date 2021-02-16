@@ -39,11 +39,7 @@ const Card = ({ project }) => {
       <div className='px-5 py-5'>{project.description}</div>
       <div className='flex px-5 pb-10 flex-wrap'>
         {project.keyword.map((i, key) => (
-          <div
-            key={key}
-            className='transition duration-500 ease-in-out rounded-full text-sm px-2 py-1 mx-2 my-1 border
-            transform hover:-translate-y-1 hover:scale-110 hover:border-0'
-          >
+          <div key={key} className='px-2 py-1 text-sm mx-2 rounded-full border'>
             {i}
           </div>
         ))}
