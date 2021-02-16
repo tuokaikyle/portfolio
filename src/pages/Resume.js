@@ -42,7 +42,7 @@ const Resume = () => {
           </div>
           <Courses courses={resume.courses} />
         </div>
-        <button className='mt-10'>
+        <button className='mt-12'>
           <a href='cv.pdf' target='_blank' rel='noopener noreferrer'>
             <div className='px-5 py-2 mx-2 my-1 border flex rounded-md text-lg hover:bg-gray-100'>
               <div>Downdload PDF</div>
