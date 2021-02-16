@@ -15,10 +15,10 @@ const Skills = ({ skills }) => {
             onClick={() => {
               setActive(i);
             }}
-            className='m-2 px-4 py-1 mb-5 transition duration-500 ease-in-out rounded-full
-                        bg-gray-100 text-gray-600 
+            className='m-2 px-4 py-1 mb-5 transition duration-500 ease-in-out rounded-full border
+                        bg-gray-100 text-gray-700
                         hover:bg-gray-50
-                        focus:outline-none focus:bg-white focus:ring-1 focus:text-blue-500 focus:ring-blue-500'
+                        focus:outline-none focus:bg-white focus:text-blue-500 focus:border-blue-500'
           >
             {i}
           </button>

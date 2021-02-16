@@ -8,7 +8,6 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Information from './components/Information';
 import Header from './components/Header';
-// import Demo from './utils/Demo';
 
 const { PUBLIC_URL } = process.env;
 
@@ -24,10 +23,14 @@ function App() {
               <Route path='/projects' component={Projects} />
               <Route path='/contact' component={Contact} />
               <Route path='/resume' component={Resume} />
-              {/* <Route path='/demo' component={Demo} /> */}
             </Switch>
           </div>
-          <div className='w-11/12 xl:w-1/4 text-center xl:text-left lg:order-1 mx-auto xl:pr-12 font-header'>
+          <div
+            className='w-11/12 
+                          xl:w-52 2xl:w-56 xl:mr-20 2xl:mr-28 
+                          text-center xl:text-left 
+                          lg:order-1 mx-auto font-header'
+          >
             <Information />
           </div>
         </div>

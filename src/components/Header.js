@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { information } from '../content/data';
+import { information, navigation } from '../content/data';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,7 @@ import { useTransition, animated } from 'react-spring';
 const Header = () => {
   const name = information.name;
 
-  const items = ['Resume', 'Projects', 'Contact'];
+  const items = navigation;
 
   function menu(twcss) {
     return items.map((i, key) => (

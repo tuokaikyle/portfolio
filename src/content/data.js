@@ -18,6 +18,8 @@ export const information = {
   },
 };
 
+export const navigation = ['Resume', 'Projects', 'Contact'];
+
 export const front = {
   title: 'Welcome',
   subtitle: 'My personal website built using React and Tailwind',
