@@ -1,5 +1,7 @@
 Hi, I'm Kai. I am a software engineer, web developer and an AWS certified solutions architect.
 
+Feel free to have a look of my resume & projects or leave me a message.
+
 #### A Brief Introduction
 
 - Currently I consider myself a _junior level_ web developer.
@@ -11,7 +13,7 @@ Hi, I'm Kai. I am a software engineer, web developer and an AWS certified soluti
 
 #### Other than Programming
 
-- I enjoy _soccer_, swimming, ice-skating, table tennis and pool.
-- Would love to learn how to draw human portrait.
+- I play _soccer_, table tennis and pool.
+- Also enjoy editing videos.
 
 Please also checkout other sections of this website. Cheers!
