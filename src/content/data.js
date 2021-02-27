@@ -307,7 +307,7 @@ export const project = [
       'Express',
       'React',
       'NodeJS',
-      'Materializecss',
+      'Materialize',
       'Cloudinary',
       'Sendgrid',
     ],
@@ -328,14 +328,7 @@ export const project = [
     image: ['tomato.jpg'],
     description:
       "The app is inspired by Alex Czarto's theory, the 4 quadrants of time management, which categorize one's future tasks into quadrants in order to have better time management.",
-    keyword: [
-      'MongoDb',
-      'Express',
-      'React',
-      'NodeJS',
-      'Materializecss',
-      'auth0',
-    ],
+    keyword: ['MongoDb', 'Express', 'React', 'NodeJS', 'Materialize', 'auth0'],
   },
   {
     title: 'Personal Website',
@@ -344,6 +337,6 @@ export const project = [
     image: ['portfolio.jpg'],
     description:
       'This project uses serverless architecture that integrates my resume and projects at the same place.',
-    keyword: ['React', 'Tailwindcss', 'Firebase'],
+    keyword: ['React', 'Tailwind'],
   },
 ];
