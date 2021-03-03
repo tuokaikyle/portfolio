@@ -14,6 +14,6 @@ Please feel free to have a look of my resume and projects, or send me a message 
 #### Other than Programming
 
 - I play _soccer_, table tennis and pool.
-- Also enjoy editing videos.
+- I also enjoy editing videos.
 
 Please also checkout other sections of this website. Cheers!
