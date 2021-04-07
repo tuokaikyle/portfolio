@@ -7,7 +7,7 @@ Please feel free to have a look of my resume and projects, or send me a message 
 - Currently I consider myself a _junior level_ web developer.
 - I use _React_ and NodeJS in most of my projects.
 - I also use Vue and Next.
-- I love _tailwind_!
+- I love _Tailwind_!
 - I am proactively exploring other trending technologies like Serverless, GraphQL, Kubernetes and Cloud Computing.
 - I hold the _AWS_ certificate of Solutions Architect - Associate.
 
