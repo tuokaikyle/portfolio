@@ -218,12 +218,17 @@ export const resume = {
     },
     {
       title: 'Typescript',
-      competency: 1,
+      competency: 4,
       category: ['Web Development', 'Languages'],
     },
     {
       title: 'Tailwind',
       competency: 5,
+      category: ['Web Development'],
+    },
+    {
+      title: 'Material-ui',
+      competency: 4,
       category: ['Web Development'],
     },
     {

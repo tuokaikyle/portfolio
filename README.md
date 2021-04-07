@@ -1,6 +1,6 @@
 ## Personal website
 
-A serverless website built using React and Tailwind. [Click here to see](https://tuokaikyle.github.io/portfolio/).
+This is a personal website that was greatly inspired by [Michael D'Angelo](https://mldangelo.com/)'s site, but was built using React and Tailwind. [Click here to see](https://tuokaikyle.github.io/portfolio/).
 
 This website has a **top bar** as the menu, a **side bar** to display personal highlights, and four pages:
 
