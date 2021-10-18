@@ -2,7 +2,7 @@ export const information = {
   image: 'me.jpg',
   name: 'Kai Tuo',
   email: 'tuo_kai@outlook.com',
-  keywords: ['software engineer', 'web developer', 'solutions architect'],
+  keywords: ['developer programmer', 'web developer', 'solutions architect'],
   copyRight: 'Pty Ltd',
   github: {
     link: 'https://github.com/tuokaikyle',
@@ -31,57 +31,49 @@ export const resume = {
     {
       title: 'Advanced Techniques for High Dimensional Data',
       number: 'INFS7205',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7205&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7205&year=2019',
       university: 'UQ',
     },
     {
       title: 'Advanced Software Engineering',
       number: 'CSSE7023',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7023&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7023&year=2019',
       university: 'UQ',
     },
     {
       title: 'Advanced Database Systems',
       number: 'INFS7907',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7907&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7907&year=2019',
       university: 'UQ',
     },
     {
       title: 'Cloud Computing',
       number: 'INFS7208',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7208&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7208&year=2019',
       university: 'UQ',
     },
     {
       title: 'Web Information Systems',
       number: 'INFS7202',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7202&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7202&year=2019',
       university: 'UQ',
     },
     {
       title: 'Algorithms & Data Structures',
       number: 'COMP7505',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7505&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7505&year=2019',
       university: 'UQ',
     },
     {
       title: 'Human-Computer Interaction',
       number: 'DECO7250',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7250&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7250&year=2019',
       university: 'UQ',
     },
     {
       title: 'Relational Database Systems',
       number: 'INFS7903',
-      link:
-        'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7903&year=2019',
+      link: 'https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7903&year=2019',
       university: 'UQ',
     },
   ],
