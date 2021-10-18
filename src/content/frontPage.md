@@ -1,4 +1,4 @@
-Hi, I'm Kai. I am a software engineer, web developer and an AWS certified solutions architect.
+Hi, I'm Kai. I am a developer programmer, web developer and an AWS certified solutions architect.
 
 Please feel free to have a look of my resume and projects, or send me a message on whatever topic - I will be more than happy to reply!
 
