@@ -5,11 +5,12 @@ Please feel free to have a look of my resume and projects, or send me a message 
 #### A Brief Introduction
 
 - Currently I consider myself a _junior level_ web developer.
-- I use _React_ and NodeJS in most of my projects.
-- I also use Vue and Next.
-- I love _Tailwind_!
-- I am proactively exploring other trending technologies like Serverless, GraphQL, Kubernetes and Cloud Computing.
+- I like to use _React_, Next, Node and Tailwindcss in most of my web projects.
+- _Go_ Programming Language sits pretty top in my learning list.
+- I am proactively exploring other trending technologies like Serverless, GraphQL, Kubernetes and CDK.
 - I hold the _AWS_ certificate of Solutions Architect - Associate.
+- I am also interested in _Machine Learning_, especially Natural language processing (NLP).
+- For Machine Learning projects, I use _fastAPI_ and jinja to present what I have done.
 
 #### Other than Programming
 
