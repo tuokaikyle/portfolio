@@ -15,7 +15,7 @@ const Experience = ({ experiences }) => {
               {i.company} - {i.position}
             </div>
           </div>
-          <div className='uppercase gray-text pb-1'>{i.daterange}</div>
+          <div className='gray-text pb-1'>{i.daterange}</div>
           <div className='pb-3'>
             {i.points.map((j, key) => (
               <ul className='text-sm list-inside list-disc' key={key}>

@@ -100,6 +100,15 @@ export const resume = {
   ],
   experiences: [
     {
+      company: 'Flight Centre Travel Group',
+      position: 'Full Stack Engineer',
+      daterange: '2021 - now',
+      points: [
+        'Working on multiple projects using React, AWS and dotnet',
+        'Collaboratively implementing and upgrading the refund system',
+      ],
+    },
+    {
       company: 'UniLodge Australia Pty Ltd',
       position: 'Residential Advisor',
       daterange: '2018 - 2020',
